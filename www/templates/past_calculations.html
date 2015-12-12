@@ -1,0 +1,31 @@
+
+<ion-view view-title="Past Calculations">
+    <ion-content>
+      <div class="button-bar">
+          <a class="button"  ng-click="openPDF()">View PDF</a>
+          <a class="button" ng-click="sendPDF()">Send PDF</a>
+      </div>
+
+      <ion-list class="hsc-list">
+        <ion-item ng-model="filter.selected" ng-repeat="previous_calculation in calculation_storage track by $index">
+          <label class="hsc-checkbox checkbox">
+            <input type="checkbox"
+                   ng-model="groupe0.checked"
+                   ng-checked="groupe0.checked"
+                   ng-change="">
+          {{previous_calculation}}
+          <i class="icon ion-ios-arrow-right"></i>
+          </label>
+
+          <ion-option-button class="button-assertive" ng-click="delete(item)">
+            Delete
+          </ion-option-button>
+        </ion-item>
+      </ion-list>
+
+
+
+
+
+    </ion-content>
+</ion-view>

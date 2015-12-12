@@ -1,0 +1,322 @@
+ /* Discover-page cards */
+.hsc-discover .item-body {
+  text-align: center;
+}
+
+.item h2 {
+    margin: 0 0 2px 0;
+    font-size: 100%;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'oswald';
+}
+
+.item p {
+  font-size: 120%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  vertical-align: middle;
+  color: #333643;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+ /* Menu item and header color */
+.bar-stable .button.button-clear {
+    color: white;
+}
+
+.bar.bar-stable .title {
+    color: white;
+}
+
+/*Discover page*/
+
+.hsc-discover_content {
+  padding: 10px;
+}
+
+ /* Calculator */
+.hsc-discover .item-body .item {
+  padding: 25px;
+}
+
+.hsc-discover .icon {
+  left: calc(50% - 25px);
+  font-size: 50px;
+}
+
+body {
+  font-family: 'oswald';
+  font-weight: 300;
+}
+
+.bar.bar-stable {
+  background:transparent;
+}
+
+.pane, .view {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333643+0,50515b+100 */
+  background: #333643; /* Old browsers */
+  background: -moz-linear-gradient(top, #333643 0%, #50515b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #333643 0%, #50515b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #333643 0%, #50515b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333643', endColorstr='#50515b', GradientType=0); /* IE6-9 */
+}
+
+ .hsc-inputwindow {
+  float:left;
+  width:100%;
+  border-bottom:1px solid rgba(96, 102, 126, 0.6);
+  padding-top:40px;
+  padding-bottom:0px;
+  margin-bottom:10px;
+}
+
+.hsc-output-calculation p {
+  text-align:right;
+  font-size:34px;
+  color:#fff;
+  width:100%;
+  height:40px;
+}
+
+.hsc-previous-input p {
+  color: #C3C3C3;
+}
+.hsc-calc-inputs.row {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.hsc-calc-inputs .button {
+  border:none;
+  border-radius: 50%;
+  text-align:center;
+  font-size: 24px;
+  opacity:0.8;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border:1px solid rgba(255, 255, 255, 0.22);
+}
+
+/*Table*/
+  tr {
+
+  }
+
+  th {
+    display: none; // for accessibility, use a visually hidden method
+  }
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+  tr {
+    border-color: lighten(#34495E, 10%);
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th, td {
+    display: none; // for accessibility, use a visually hidden method
+    margin: .5em 1em;
+  }
+
+
+
+.hsc-calc-inputs .col {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hsc-calc-inputs .button:active {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.hsc-buttons {
+  margin: auto;
+  /*max-width: 500px;*/
+}
+
+.hsc-most-common-row {
+  height: 40px;
+  white-space: nowrap;
+  clear: both;
+}
+
+.hsc-most-common {
+  border-radius: 7px;
+  background-color: #464A5F;
+  color:#fff;
+  margin : 5px;
+  border : 0;
+  opacity:0.8;
+  font-family: 'oswald';
+}
+
+.hsc-most-common:active {
+  background-color: gray;
+}
+
+.hsc-previous-input {
+  float: right;
+  padding-right: 20px;
+  width: auto;
+  clear: both;
+  height: 35px;
+  fonts-size:16px;
+
+}
+
+.hsc-output-calculation {
+  float: right;
+  padding-right: 20px;
+  width: auto;
+  clear: both;
+}
+
+.hsc-number.button, .hsc-number.button:hover {
+  color: white;
+  background-color: transparent;
+  opacity: 0.8 !important;
+}
+
+.hsc-number.button.activated {
+  background-color: #f8f8f8;
+  opacity: 0.8 !important;
+  color: #2b2b2b;
+  border:1px solid rgba(248, 248, 248, 0.6);
+}
+
+.hsc-operator.button, .hsc-operator.button:hover {
+  color: #0292DC;
+  background: transparent;
+  opacity: 1 !important;
+  border:1px solid rgba(10, 128, 187, 0.4);
+}
+
+a.hsc-operator.button.activated {
+  background: #0a80bb;
+  opacity: 0.7 !important;
+  color:#ffffff;
+  border:1px solid rgba(10, 128, 187, 0.6);
+}
+
+.hsc-currency.button, .hsc-currency.button:hover {
+  color: #FF004F;
+  background-color: transparent;
+  opacity: 0.9 !important;
+  border:1px solid rgba(255, 0, 79, 0.4);
+
+}
+
+.hsc-currency.button.activated, .hsc-currency.button.toggled {
+  background-color: #FF004F;
+  opacity: 0.7 !important;
+  color:#ffffff;
+  border:1px solid rgba(255, 0, 79, 0.6);
+}
+
+.hsc-del.button, .hsc-del.button:hover {
+  color: #FBEA19;
+  background-color: transparent;
+  opacity: 0.9 !important;
+  font-size:14px;
+  font-weight:normal;
+  border:1px solid rgba(251, 234, 25, 0.3);
+}
+
+.hsc-del.button.activated {
+  background-color: #FBEA19;
+  opacity: 0.9 !important;
+  color:#ffffff;
+  border:1px solid rgba(251, 234, 25, 0.6);
+}
+
+.hsc-calc-inputs .bigger-font-size{
+  /*font-size: 300%;*/
+  /*padding-top: 0;*/
+  font-size: 35px;
+  text-align: center;
+  font-weight: 200;
+  font-family: Helvetica Neue; /*IMPORTANT Need to reconsider font for operators..*/
+  padding: 0px;
+  line-height: 40px;
+}
+
+.hsc-left .pane{
+  display:none;
+}
+
+.hsc-right .pane{
+  width: 100% !important;
+  right: 0 !important;
+  left: 0 !important;
+}
+
+.hsc-checkbox input {
+  float:left;
+  margin-right:15px;
+}
+
+label.hsc-checkbox {
+  line-height:28px;
+  font-weight:200;
+  width:100%;
+}
+
+label.hsc-checkbox i {
+  float: right;
+  font-size: 26px;
+}
+
+.hsc-list .item-content {
+ padding-right: 15px;
+}
+
+
+/*Other device styles*/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .hsc-left .pane{
+    width: 30% !important;
+    left: 0 !important;
+    right: 70% !important;
+    display:block;
+  }
+
+  .hsc-right .pane{
+    width: 70% !important;
+    right: 0 !important;
+    left: 30% !important;
+  }
+
+  .hsc-right .pane[view-title="Past Calculations"], .hsc-right .pane[view-title="Settings"], .hsc-right .pane[view-title="Discover"], .hsc-right .pane[view-title="Handy Shilling Calculator Credits"] {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  .hsc-calc-inputs .button {
+    height:80px;
+    width:80px;
+    line-height:80px;
+  }
+
+  .hsc-calc-inputs .bigger-font-size{
+    font-size: 40px;
+    line-height: 70px;
+  }
+}
+

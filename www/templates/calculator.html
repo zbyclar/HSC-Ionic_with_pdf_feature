@@ -1,0 +1,54 @@
+<ion-view hide-nav-bar="true" view-title="Calculator">
+    <ion-content ng-controller="CalculatorCtrl">
+
+      <div class="hsc-inputwindow">
+        <div class="hsc-output-calculation row">
+          <p>{{output}}</p>
+        </div>
+          <div class="hsc-previous-input row">
+            <p>{{previousInput}}</p>
+          </div>
+        <ion-scroll direction="x" class="hsc-most-common-row">
+            <button class="hsc-most-common" ng-repeat="computation in mostCommon track by $index">
+              {{computation}}
+            </button>
+        </ion-scroll>
+      </div>
+      <div class="hsc-buttons">
+        <div class="hsc-calc-inputs row">
+          <div class="col" ng-click='updateTypeDev(1,1)'><a class="hsc-currency button {{toggle1}}">£</a></div>
+          <div class="col" ng-click='updateTypeDev(2,2)'><a class="hsc-currency button {{toggle2}}">S</a></div>
+          <div class="col" ng-click='updateTypeDev(3,3)'><a class="hsc-currency button {{toggle3}}">D</a></div>
+          <div class="col" on-tap='deleteOutputDev()' on-double-tap="deleteAllOutputDev()" on-hold="deleteAllOutputDev()"><a class="hsc-del button">DEL</a></div>
+        </div>
+
+        <div class="hsc-calc-inputs row">
+          <div class="col" ng-click='updateOutputDev(7)'><a class="hsc-number button">7</a></div>
+          <div class="col" ng-click='updateOutputDev(8)'><a class="hsc-number button">8</a></div>
+          <div class="col" ng-click='updateOutputDev(9)'><a class="hsc-number button">9</a></div>
+          <div class="col" ng-click='performAddDev()'><a class="hsc-operator bigger-font-size button">&#43;</a></div>
+        </div>
+
+        <div class="hsc-calc-inputs row">
+          <div class="col" ng-click='updateOutputDev(4)'><a class="hsc-number button">4</a></div>
+          <div class="col" ng-click='updateOutputDev(5)'><a class="hsc-number button">5</a></div>
+          <div class="col" ng-click='updateOutputDev(6)'><a class="hsc-number button">6</a></div>
+          <div class="col" ng-click='performSubDev()'><a class="hsc-operator bigger-font-size button">&#45;</a></div>
+        </div>
+
+        <div class="hsc-calc-inputs row">
+          <div class="col" ng-click='updateOutputDev(1)'><a class="hsc-number button">1</a></div>
+          <div class="col" ng-click='updateOutputDev(2)'><a class="hsc-number button">2</a></div>
+          <div class="col" ng-click='updateOutputDev(3)'><a class="hsc-number button">3</a></div>
+          <div class="col" ng-click='performMultiplication()'><a class="hsc-operator bigger-font-size button">&#215;</a></div>
+        </div>
+
+        <div class="hsc-calc-inputs row">
+          <div class="col" ng-click='updateOutputDev(0)'><a class="hsc-number button">0</a></div>
+          <div class="col" ng-click='updateOutputDev(".")'><a class="hsc-operator bigger-font-size button">.</a></div>
+          <div class="col" ng-click='performEqualsDev()'><a class="hsc-operator bigger-font-size button">&#61;</a></div>
+          <div class="col" ng-click='performDivision()'><a class="hsc-operator bigger-font-size button">&#247;</a></div>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>
